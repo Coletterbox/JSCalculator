@@ -1,0 +1,82 @@
+body {
+	background: #d691c1;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #cb91d6;
+	margin: 0;
+	padding: 0;
+}
+
+.grey {
+  color: grey;
+}
+
+.container {
+  border-radius: 10px;
+  padding-bottom: 20px;
+  width: 320px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+  /*bottom: 50%;*/
+	transform: translate(-50%, -50%);
+	background: #d6c9db;
+	box-shadow: 10px 7px 36px -15px rgba(0,0,0,0.75);
+}
+
+.display {
+	height: 50px;
+	padding: 50px 0px;
+	background: #530d6d;
+  border-radius: 10px;
+}
+
+.rows {
+	width: 280px;
+}
+
+.buttons {
+	padding: 20px 20px 20px 20px;
+}
+
+input[type=button] {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin: 5px;
+	background: #cb91d6;
+  font-weight: 400;
+  color: #5E5858;
+  cursor: pointer;
+	font-size: 25px;
+	line-height: 30px;
+	border-radius: 10%;
+
+}
+
+input[type=text] {
+  padding-top: 0px;
+	width: 270px;
+	height: 70px;
+	float: left;
+	color: #cb91d6;
+	text-align: right;
+	font-weight: 400;
+	font-size: 60px;
+	margin: 0px 25px;
+  background: none;
+  border-color: grey;
+}
+
+#clearButton {
+  width: 130px;
+  /*margin-left: 50%;
+  margin-right: 50%;*/
+}
+
+#offButton {
+  width: 130px;
+}

@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <title>JS Calculator</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<script>
+    function calculate(result) {
+      form.total.value = form.total.value + result;
+    }
+	</script>
+
+	<div class="container">
+		<form name="form">
+  		<div class="display">
+  		  <input type="text" id="total" name="total" placeholder="0">
+  	  </div>
+
+      <div class="buttons">
+        <div class="rows">
+          <input type="button" name="btn1" value="1" onClick="calculate(btn1.value)">
+          <input type="button" name="btn2" value="2" onClick="calculate(btn2.value)">
+          <input type="button" name="btn3" value="3" onClick="calculate(btn3.value)">
+    			<input type="button" name="divide" value="/" onClick="calculate(divide.value)">
+        </div>
+
+    	  <div class="rows">
+    		  <input type="button" name="btn4" value="4" onClick="calculate(btn4.value)">
+    		  <input type="button" name="btn5" value="5" onClick="calculate(btn5.value)">
+    		  <input type="button" name="btn6" value="6" onClick="calculate(btn6.value)">
+          <input type="button" name="multiply" value="*" onClick="calculate(multiply.value)">
+    	  </div>
+
+    	  <div class="rows">
+    		  <input type="button" name="btn7" value="7" onClick="calculate(btn7.value)">
+    		  <input type="button" name="btn8" value="8" onClick="calculate(btn8.value)">
+    		  <input type="button" name="btn9" value="9" onClick="calculate(btn9.value)">
+          <input type="button" name="minus" value="-" onClick="calculate(minus.value)">
+    	  </div>
+
+    	  <div class="rows">
+    		  <input type="button" name="btn0" value="0" onClick="calculate(btn0.value)">
+    		  <input type="button" name="decimal" value="." onClick="calculate(decimal.value)">
+    		  <input type="button" value="=" onClick="total.value=eval(total.value)">
+    		  <input type="button" name="add" value="+" onClick="calculate(add.value)">
+    	  </div>
+
+        <div class="rows">
+          <input type="button" id="clearButton" name="clear" value="clear" onClick="total.value=0">
+          <input type="button" id="offButton" name="off" value="on/off" onClick="offFunction()">
+          <!-- <input type="button" id="offButton" name="off" value="on/off" onClick="document.getElementById("total").style.color = "red""> -->
+        </div>
+      </div>
+		</form>
+	</div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
